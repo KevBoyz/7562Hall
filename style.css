@@ -1,0 +1,76 @@
+@media (orientation: portrait){
+    #desktop-nav{
+        display: none !important;
+    }
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+html, div{display: block;}
+main{margin-top: 100px;}
+header{
+    display: flex;
+    position: fixed;
+    height: 60px;
+    background-color: #2a771b;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav{
+    width: 60%;
+}
+.warp{
+    margin:0;
+    max-width: 1280px;
+}
+.flex-auto{
+    flex: auto;
+}
+.interface-link{
+    text-decoration: none;
+    color: white;
+}
+#title{
+    margin: 0 0 0 20px;
+}
+#title a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -9px;
+    letter-spacing: 2px;
+}
+#desktop-nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.5em;
+    position: relative;
+    padding: 0;
+    justify-content: space-evenly;
+    margin: 0;
+    height: 100%;
+}
+#desktop-nav ul li{
+    height: 72%;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+#desktop-nav ul li:hover, #search:hover{
+    background-color: #259e0dcb
+}
+#search{
+    font-size: 1.8em;
+    position: relative;
+    top: -1px;
+    margin:0;
+    height: 80%;
+    text-align: center;
+    padding-top: 0.95%;
+    
+}
