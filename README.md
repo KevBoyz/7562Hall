@@ -1,2 +1,2 @@
 # 7562Hall
- You will discover one day
+Blog page baseada em Velho Bit

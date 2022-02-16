@@ -2,7 +2,7 @@
     #desktop-nav{
         display: none !important;
     }
-    #search span {
+    #search-button span {
         top: 5px !important;
     }
     #perfil h2{
@@ -28,9 +28,6 @@ header{
     left: 0;
     width: 100%;
 }
-nav{
-    width: 60%;
-}
 .warp{
     margin:0;
     max-width: 1280px;
@@ -42,10 +39,10 @@ nav{
     text-decoration: none;
     color: white;
 }
-#title{
+#nav-title-box{
     margin: 0 0 0 20px;
 }
-#title a{
+#nav-title{
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -53,10 +50,13 @@ nav{
     top: -9px;
     letter-spacing: 2px;
 }
-#title a:hover{
+#nav-title:hover{
     letter-spacing: 5px;
 }
-#desktop-nav ul{
+#desktop-nav{
+    width: 60%;
+}
+#desktop-nav-itens{
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -67,19 +67,19 @@ nav{
     margin: 0;
     height: 100%;
 }
-#desktop-nav ul li{
+.desktop-nav-item{
     height: 60px;
     width: 100%;
     text-align: center;
 }
-#desktop-nav ul li a{
+.desktop-nav-item .interface-link{
     position: relative;
     top: 15px;
 }
-#desktop-nav ul li:hover, #search:hover{
+.desktop-nav-item:hover, #search:hover{
     background-color: #259e0dcb
 }
-#search{
+#search-button{
     font-size: 1.8em;
     position: relative;
     margin:0;
@@ -88,7 +88,7 @@ nav{
     display: block;
     width: 10%;
 }
-#search span{
+#search-button span{
     position: relative;
     top: -10%;
 }
