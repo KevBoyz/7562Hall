@@ -3,7 +3,13 @@
         display: none !important;
     }
     #search span {
-        top: 0 !important;
+        top: 5px !important;
+    }
+    #perfil h2{
+        font-size: 2em !important;  
+    }
+    #perfil img{
+        width: 80% !important;
     }
 }
 body{
@@ -12,7 +18,7 @@ body{
     color: white;
 }
 html, div{display: block;}
-main{margin-top: 100px;}
+main{margin-top: 90px;}
 header{
     display: flex;
     position: fixed;
@@ -85,4 +91,27 @@ nav{
 #search span{
     position: relative;
     top: -10%;
+}
+#perfil{
+    margin: 0 0 0 2% ;
+    display: flex;
+    height: 12rem;
+    width: 90%;
+}
+#perfil img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 100%;
+}
+#perfil div{
+    margin-left: 20px;
+}
+#perfil h2{
+    font-size: 3em;
+    margin-bottom: 0;
+    padding: 0;
+}
+#perfil p{
+    width: 100%;
 }
