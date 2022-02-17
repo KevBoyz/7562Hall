@@ -1,3 +1,15 @@
+::-webkit-scrollbar { /* width */
+    width: 10px;
+}
+::-webkit-scrollbar-track { /* Track */
+    background: #292927; 
+}  
+::-webkit-scrollbar-thumb { /* Handle */
+    background: rgb(95, 93, 93); 
+}
+::-webkit-scrollbar-thumb:hover { /* Handle on hover */
+    background: #555; 
+}
 @media (orientation: portrait){
     #desktop-nav{
         display: none !important;
@@ -141,4 +153,9 @@ header{
 }
 #content-grid article img{
     border-radius: 100%;
+}
+footer h2{
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 30px;
 }
