@@ -11,6 +11,11 @@
     #perfil img{
         width: 80% !important;
     }
+    #content-grid{
+        grid-template-columns: 100% !important;
+        margin-left: 5% !important;
+        width: 90% !important;
+    }
 }
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
@@ -18,7 +23,7 @@ body{
     color: white;
 }
 html, div{display: block;}
-main{margin-top: 90px;}
+main{margin-top: 80px;}
 header{
     display: flex;
     position: fixed;
@@ -30,7 +35,7 @@ header{
 }
 .warp{
     margin:0;
-    max-width: 1280px;
+    max-width: 1366px;
 }
 .flex-auto{
     flex: auto;
@@ -93,7 +98,7 @@ header{
     top: -10%;
 }
 #perfil{
-    margin: 0 0 0 2% ;
+    margin: 0 0 20px 2% ;
     display: flex;
     height: 12rem;
     width: 90%;
@@ -114,4 +119,26 @@ header{
 }
 #perfil p{
     width: 100%;
+}
+#content-grid{
+    width: 90%;
+    margin-left: 3.5%;
+    display: grid;
+    grid-gap: 0.9em;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+}
+#content-grid article{
+    height: 100px;
+    background-color: #3a3a3a;
+    border-radius: 15px;
+    padding: 20px 25px;
+    height: 300px;
+}
+#content-grid article h1{
+    font-weight: 400;
+    font-size: 1.8em;
+}
+#content-grid article img{
+    border-radius: 100%;
 }
