@@ -10,15 +10,12 @@
 ::-webkit-scrollbar-thumb:hover { /* Handle on hover */
     background: #555; 
 }
-@media (orientation: portrait){
+@media (max-width: 900px){
     #desktop-nav{
         display: none !important;
     }
     #search-button span {
         top: 5px !important;
-    }
-    #perfil h2{
-        font-size: 2em !important;  
     }
     #perfil img{
         width: 80% !important;
