@@ -28,6 +28,9 @@
     #pinned-grid article h1{
         font-size: 1.8em !important;
     }
+    #perfil h2{
+        font-size: 2em !important;  
+    }
 }
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
