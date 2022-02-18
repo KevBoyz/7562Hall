@@ -20,10 +20,13 @@
     #perfil img{
         width: 80% !important;
     }
-    #content-grid{
+    #content-grid, #pinned-grid{
         grid-template-columns: 100% !important;
         margin-left: 5% !important;
         width: 90% !important;
+    }
+    #pinned-grid article h1{
+        font-size: 1.8em !important;
     }
 }
 body{
@@ -129,6 +132,21 @@ header{
 #perfil p{
     width: 100%;
 }
+#pinned-grid{
+    width: 92.7%;
+    margin-left: 3.5%;
+    margin-right: 0;
+    display: grid;
+    grid-gap: 0.9em;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#pinned-grid article h1{
+    font-weight: 400;
+    font-size: 2.5em;
+    margin: 20px 0 20px 0;
+}
 #content-grid{
     width: 90%;
     margin-left: 3.5%;
@@ -137,7 +155,7 @@ header{
     grid-template-columns: 25% 25% 25% 25%;
     align-items: center;
 }
-#content-grid article{
+#content-grid article, #pinned-grid article{
     height: 100px;
     background-color: #3a3a3a;
     border-radius: 15px;
@@ -148,7 +166,7 @@ header{
     font-weight: 400;
     font-size: 1.8em;
 }
-#content-grid article img{
+#content-grid article img, #pinned-grid article img{
     border-radius: 100%;
 }
 footer h2{
