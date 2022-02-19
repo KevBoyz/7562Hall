@@ -14,6 +14,10 @@
     #article{
         padding: 0 20px !important;
     }
+    main{
+        background-color: transparent !important;
+        padding-top: 0 !important;
+    }
 }
 @media (max-width: 900px){
     #desktop-nav{
@@ -29,7 +33,6 @@ body{
     color: white;
 }
 html, div{display: block;}
-main{margin-top: 80px;}
 header{
     font-family: Arial, sans-serif;
     display: flex;
@@ -133,9 +136,18 @@ footer h2{
     text-align: center;
     letter-spacing: 30px;
 }
+main{
+    background-color: #2a2a2a;
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-top: 80px;
+    padding: 10px 0 10px 0;
+    border-radius: 1em;
+}
 #article{
     max-width: 816px;
     margin: 20px auto;
+
 }
 #article-main-header a{
     color: #2ab71b;
@@ -147,7 +159,7 @@ footer h2{
 #article-main-header h2{
     margin:0;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 300;
 }
 #article-main-header h1{
     margin:0;
@@ -159,9 +171,10 @@ footer h2{
     font-size: 17px;
 }
 #main-content h2{
-    font-size: 1.6em;
+    font-size: 1.8em;
     text-align: left;
     border-bottom: 1px solid #d6d6d685;
     margin: 1.4em 0 0 0;
     padding-bottom: 0.2em;
+    font-weight: 500;
 }

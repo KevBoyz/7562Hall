@@ -70,6 +70,9 @@ header{
     color: white;
     border-radius: 15px;
 }
+.date{
+    color: #fff;
+}
 #nav-title-box{
     margin: 0 0 0 20px;
 }
@@ -176,10 +179,14 @@ header{
     padding: 20px 25px;
     height: 300px;
 }
-#content-grid article h2, #pinned-grid article h2{
-    color: #00ff0096;
+article:hover{
+    background-color: #454545 !important;
+
 }
-#content-grid article h2:hover, #pinned-grid article h2:hover{
+#content-grid article h2, #pinned-grid article h2{
+    color: #30be14;
+}
+#content-grid article h2 a:hover, #pinned-grid article h2 a:hover{
     text-decoration: underline;
 }
 #content-grid article h1{
@@ -193,4 +200,7 @@ footer h2{
     margin-top: 20px;
     text-align: center;
     letter-spacing: 30px;
+}
+.none-radius{
+    border-radius: 0 !important;
 }
