@@ -18,6 +18,9 @@
         background-color: transparent !important;
         padding-top: 0 !important;
     }
+    #ref div{
+        margin-left: 0 !important;
+    }
 }
 @media (max-width: 900px){
     #desktop-nav{
@@ -36,12 +39,17 @@ html, div{display: block;}
 header{
     font-family: Arial, sans-serif;
     display: flex;
-    position: fixed;
     height: 60px;
     background-color: #2a771b;
-    top: 0;
-    left: 0;
     width: 100%;
+}
+main{
+    background-color: #2a2a2a;
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-top: 40px;
+    padding: 10px 0 10px 0;
+    border-radius: 1em;
 }
 .warp{
     margin:0;
@@ -87,6 +95,7 @@ header{
     height: 60px;
     width: 100%;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .desktop-nav-item .interface-link{
     position: relative;
@@ -136,14 +145,6 @@ footer h2{
     text-align: center;
     letter-spacing: 30px;
 }
-main{
-    background-color: #2a2a2a;
-    max-width: 1000px;
-    margin: 20px auto;
-    margin-top: 80px;
-    padding: 10px 0 10px 0;
-    border-radius: 1em;
-}
 #article{
     max-width: 816px;
     margin: 20px auto;
@@ -168,13 +169,51 @@ main{
 }
 #main-content p{
     margin: 1em 0 0;
-    font-size: 17px;
 }
 #main-content h2{
     font-size: 1.8em;
     text-align: left;
     border-bottom: 1px solid #d6d6d685;
-    margin: 1.4em 0 0 0;
+    margin: .5em 0 0 0;
     padding-bottom: 0.2em;
     font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #0fe20f;
+}
+a:hover{
+    text-decoration: underline;
+}
+#article-ul{
+    margin-bottom: 0;
+    padding-left: 35px;
+}
+#article-ul, #article-ul ul{
+    line-height: 30px;
+    font-size: 17px;
+}
+.code{
+    height: 100%;
+    font-family: monospace;
+    position: relative;
+    top: -1px;
+    padding: 2px 2px 2px 2px;
+    background-color: #00000079;
+    color: #9eff2f;
+    font-size: 17px;
+}
+.italic{
+    font-style: italic;
+}
+h3{
+    font-weight: 500;
+    text-align: left;
+    margin: .5em 0 10px 0;
+}
+#ref p{
+    margin: 5px 0 0 0;
+}
+#ref div{
+    margin-left: 15px;
 }

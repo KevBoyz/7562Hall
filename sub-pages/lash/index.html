@@ -47,22 +47,281 @@
     <main class="wrap">
         <article id="article">
             <div id="article-main-header">
-                <h2><a href="">Documentação</a> - postado em 19 de fevereiro de 2022</h2>
+                <h2><a href="">Documentação</a> - postado em 20 de fevereiro de 2022</h2>
                 <h1>Lash v1.2.1 Documentação completa</h1>
             </div>
             <div id="main-content">
                 <p>
-                    Lash is a cli package developed in Python, he provides a set of desktop tools that
-                    simplify and automate repetitive processes. Lash also has utility functions that
-                    cover some needs of desktop users, like files encryptation or keylogger.
-                    Lash is actually available on Pypi and Github.
+                    Lash é um pacote cli desenvolvido em Python, um conjunto de ferramentas para
+                    simplificar e automatizar processos repetitivos. Também com funções utilitárias que
+                    cobrem algumas necessidades gerais, como encriptação de arquivos, edição de images e agendamento de tarefas.
+                    Atualmente disponivel públicamente na <a href="github.com/kevboyz">Github</a> e <a href="https://pypi.org/project/lash/">Pypy</a>.
+                </p>
+                <p></p>
+                <details>
+                    <summary>Descrição rápida. Todos os comandos incluídos.</summary>
+                    <ul id="article-ul">
+                        <li>
+                            <a href="">autoclick</a>: O padrão de clicador automático. Tambem com opção de click and hold.
+                        </li>
+                        <li>
+                            <a href="">keyhold</a>: Segura uma tecla qualquer. Ideal para uso conjunto de autoclick.
+                        </li>
+                        <li>
+                            <a href="">organize</a>: Organize arquivos por tipo ou extenção. Midias, documentos, outros.
+                        </li>
+                        <li>
+                            <a href="">random</a>: Gera sequencias aleatórias customizaveis. Letras, Números e Símbolos.
+                        </li>
+                        <li>
+                            <a href="">taskkiller</a>: Assasine múltiplos processos. É nessesário lista-los em configurações.
+                        </li>
+                        <li>
+                            <a href="">getconfig</a>: Retorna o local do arquivo de configurações do pacote.
+                        </li>
+                        <li>
+                            <a href="">image</a>: Grupo de comandos para edição de imagens.
+                            <ul>
+                                <li>
+                                    <a href="">resize</a>: Redimensione uma imagem. Dobrar, diminuir ou customizar o tamanho.
+                                </li>
+                                <li>
+                                    <a href="">adjust</a>: Ajuste o brilho, contraste, saturação e serrilhamento da imagem.
+                                </li>
+                                <li>
+                                    <a href="">filter</a>: Aplique filtros pre-definidos em imagens.
+                                </li>
+                                <li>
+                                    <a href="">flip</a>: Espelhe images em todas as direções.
+                                </li>
+                                <li>
+                                 <a href="">wmark</a>: Aplique uma marca d'agua de texto sob imagens.
+                                </li>
+                                <li>
+                                    <a href="">paste</a>: Cole uma imagem em cima de outra.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">sched</a>: Grupo de comandos para o agendamento de tarefas.
+                            <ul>
+                                <li>
+                                    <a href="">exec</a>: Executa a tarefa em uma determinada hora do dia.
+                                </li>
+                                <li>
+                                 <a href="">run</a>: Em loop espera x tempo e executa a tarefa.
+                             </li>
+                             <li>
+                                 <a href="">wait</a>: Espera e executa apenas uma vez a tarefa.
+                             </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">spy</a>: Grupo de comandos envolvendo hacking.
+                            <ul>
+                                <li>
+                                    <a href="">crypt</a>: Criptografe arquivos em 128bits. Algoritimo AES.
+                                 </li>
+                                 <li>
+                                     <a href="">keylogger</a>: Espione o teclado salvando o resultado em arquivo de texto
+                                 </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">web</a>: Grupo de comandos com funções para a web.
+                            <ul>
+                                <li>
+                                    <a href="">ghscrape</a>: Raspe os dados de um usuário da GitHub. Seguidores, bio e atividade.
+                                </li>
+                                <li>
+                                     <a href="">new</a>: Crie arquivos html, css e js padrões fácilmente.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">zip</a>: Grupo de comandos para manipulação de arquivos zip.
+                            <ul>
+                                <li>
+                                    <a href="">compress</a>: Comprima em zip.
+                                </li>
+                                <li>
+                                    <a href="">extract</a>: Extraia um zip.
+                                </li>
+                                <li>
+                                    <a href="">view</a>: Visualize um zip.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                             <a href="">calc</a>: Grupo de comandos com funções matemáticas.
+                             <ul>
+                                 <li><a href="">prob</a>: Calculadora de probabilidade simples. Resultado decimal ou em porcentagem</li>
+                             </ul>
+                         </li>
+                    </ul>
+                </details>
+                <h2>Instalar e executar</h2>
+                <p>É nessesário possuir <a href="http://python.org" target="_blank">Python</a> 3.5 ou superior instalado junto ao pip. Execute os comandos abaixo.</p>
+                <ul>
+                    <li>
+                        Instalando: <span class="code">pip install lash</span>
+                    </li>
+                    <li>
+                        Executando: <span class="code">python -m lash</span>
+                    </li>
+                </ul>
+                <p>
+                    O projeto segue os padrões de <span class="italic">command line interface</span> Linux, mas tem foco pricipalmente em Windows.
+                    A sintaxe padrão do pacote é definida por: <span class="code">lash group command options arguments</span>. Todos os comandos possuem
+                    a opção <span class="code">--help</span> que retorna um guia de usagem e descrição.
                 </p>
                 <p>
-                    The tool have all commands documenteted with auto-help sections that can be viewd
-                    using the --help option, this article shows more datails and usages for commands.
+                    Detahes sobre cada opção serão encontrados com a opção de ajuda de cada comando. A  referência de usagem tem apenas exemplos e orientações
+                    Em caso de erros ou dúvidas sobre o pacote, abra uma issue em seu repositório.
                 </p>
-                <h2>How install and execute</h2>
-                <p>You need to have Python3.5 > and pip installed in your machine, you can installed on python.org, after that, follow the steps below:</p>
+                <h2>Considerações</h2>
+                <p>
+                    Lash possui um arquivo de configurações que pode ser customizado. Encontre-o com o comando <span class="code">getconfig</span>.
+                    Nele é possivel modificar o codigo gerado pelo <span class="code">web new</span> ou a lista negra de <span class="code">taskkiller</span>.
+                    Instruções de como editar estarão no próprio arquivo e nos comandos.
+                </p>
+                <div id="ref">
+                    <h2>Referência de Usagem</h2>
+                    <h3>autoclick - Comado global</h3>
+                    <div>
+                        <p>Ative e desative com teclas de atalho. Caso não pare, apertar várias vezes.</p>
+                        <p>-sg e -db realizam funções unicas. O valor de -cd deve ser em segundos, padraõ: 0</p>
+                        <p>
+                            <span class="code">autoclick -cd 0.5</span> <span class="code">autoclick -ch</span> <span class="code">autoclick -cd 5 -sg</span> <span class="code">autoclick</span>
+                        </p>
+                    </div>
+                    <h3>keyhold - Comando  global</h3>
+                    <div>
+                        <p>Defina a tecla por seu nome. Quebre o processo com f3. Apenas segura a tecla.</p>
+                        <p>
+                            <span class="code">keyhold w</span> <span class="code">keyhold z</span> <span class="code">keyhold b</span>
+                        </p>
+                    </div>
+                    <h3>organize - Comando Global</h3>
+                    <div>
+                        <p>Arquivos irão para sub-pastas.-t especifica o tipo, buscando apenas por algo específico.</p>
+                        <p>
+                            <span class="code">organize root/folder</span> <span class="code">organize -t .pdf</span> <span class="code">organize -m -s</span> <span class="code">organize</span>
+                        </p>
+                    </div>
+                    <h3>random - Comando global</h3>
+                    <div>
+                        <p>
+                            Sequencias quaisquer. Ative e desative com tanto que 1 fique ativo. Simples.
+                        </p>
+                        <p>
+                            <span class="code">random</span> <span class="code">random -c 10 -s</span> <span class="code">random -n -l -ul</span> <span class="code">random -s -l -ul -c 15</span>
+                        </p>
+                    </div>
+                    <h3>Sched - grupo de comandos</h3>
+                    <div>
+                        <p>
+                            Todos os comandos de sched trabalham com execução de comandos após determinado delay. Dessa forma talvez você precise de um
+                            script próprio para satisfazer suas nessecidades. Valor horario configurado em: h m s. Comandos com mais de uma palavra devem estar entre aspas.
+                        </p>
+                        <h3>run - Pertencente ao grupo Sched</h3>
+                        <div>
+                            <p>
+                                Loop infinito. 
+                            </p>
+                            <p>
+                                <span class="code">run ipconfig 0 0 5</span> <span class="code">run tree 0 1 0</span> <span class="code">run "ping google.com" 0 0 10</span>
+                            </p>
+                        </div>
+                        <h3>wait - Pertencente ao grupo Sched</h3>
+                        <div>
+                            <p>Apenas uma vez. Com direito a relogio de tempo restante</p>
+                            <p>
+                                <span class="code">wait "help cd" 0 0 10</span> <span class="code">wait dir 0 1 0</span> <span class="code">wait "py -m lash autoclick -sg" 0 0 5</span>
+                            </p>
+                        </div>
+                        <h3>exec</h3>
+                        <div>
+                            <p>Em uma determinada hora do dia</p>
+                            <p><span class="code">exec ipconfig 18:30:0</span> <span class="code">exec ipconfig 7:25:12</span></p>
+                        </div>
+                    </div>
+                    <h3>keyboard - Pertencente ao grupo Spy</h3>
+                    <div>
+                        <p>Keylogger. Desative com tecla de atalho. Tente camuflar. Tudo será salvo como texto.</p>
+                        <p>
+                            <span class="code">keyboard</span> <span class="code">keyboard -p User/desktop</span>
+                        </p>
+                    </div>
+                    <h3>crypt - Pertencente ao grupo Spy</h3>
+                    <div>
+                        <p>Criptografe arquivos em 128bits, 16 caractéries.</p>
+                        <p>
+                            <span class="code">crypt file.txt $kvzis1@7y602qsx</span>
+                        </p>
+                    </div>
+                    <h3>taskkiller - Commndo global</h3>
+                    <div>
+                        <p>
+                            Mate processos. Adicione o nome dos processos a lista negra do config.py (getconfig para encontrar).
+                            Erros de permissão podem ocorrer. O comando não leva argumentos ou opções.
+                        </p>
+                    </div>
+                    <h3>ghscrape - Pertencente ao grupo Web</h3>
+                    <div>
+                        <p>Raspe um perfil da GitHub.</p>
+                        <p>
+                            <span class="code">ghscrape kevboyz</span>
+                        </p>
+                    </div>
+                    <h3>new - Pertencente ao grupo Web</h3>
+                    <div>
+                        <p>Customize apartir de configurações. Gera arquivos html, css e js</p>
+                        <p>
+                            <span class="code">new</span> <span class="code"> User/folder</span>
+                        </p>
+                    </div>
+                    <h3>Image - Grupo de comandos</h3>
+                    <div>
+                        <p>
+                            Comandos para edição de images. Todos os subs tem as seguintes opções: Comparar com original, testar, aplicar a todas as imagens. (-c, -t, -all).
+                            Os valores numericos variam de 1, valor relativo a image e 0, nada. 0.5 diminuir, 1.5 aumentar.
+                        </p>
+                        <h3>adjust</h3>
+                        <div>
+                            <p>Briho, contrante, saturação e serrilhamento</p>
+                            <p>
+                                <span class="code">adjust -t -ct 1.2 -b 1.1 -s 1.3 img.png</span>
+                            </p>
+                        </div>
+                        <h3>filter</h3>
+                        <div>
+                            <p>Aplique filtros pre-definidos</p>
+                            <p>
+                                <span class="code">filter -all -k -d -b C:\Users\User\Folder</span> <span class="code">filter -t -k -d img.png</span>
+                            </p>
+                        </div>
+                        <h3>flip</h3>
+                        <div>
+                            <p>Flipe nas 4 direções</p>
+                            <p>
+                                <span class="code">flip -lr -c img.png</span> <span class="code">flip -tb -c img.png</span>
+                            </p>
+                        </div>
+                        <h3>resize</h3>
+                        <div>
+                            <p>Redimensione imagens. Eixo customizavel. Tambem -> *2 ou /2.</p>
+                            <p>
+                                <span class="code">resize -d img.jpg</span> <span class="code">resize -axis 100 100 img.png</span>
+                            </p>
+                        </div>
+                        <h3>wmark</h3>
+                        <p>Marca d'agua em imagens</p>
+                        <p>
+                            <span class="code">wmark -t -tp 10 -tf arial KevBz Folder\img.png</span>
+                        </p>
+                    </div>
+                    <p>O grupo Zip, o grupo calc o comando getconfig foram ignorados dessa lista por serem mais simples.</p>
             </div>
         </article>
     </main>
